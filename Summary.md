@@ -54,9 +54,27 @@
 
 ## ObjectTest
 1. What is the knowledge point of the test? Where is the official document to the knowledge point?
+	* Object references
+	* Default field values
+	* Pass by value vs pass by reference
+	* Function overloading
+	* Constructors calling other constructors
+	* Order of execution between field initializer, static blocks, and constructors
+	* Variable length parameters in functions
+	* Official documents
+		* [Object#equals](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals(java.lang.Object))
+		* [Default Values](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+		* [Passing Reference Data Type Arguments](https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html)
+		* [Overloading Methods](https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html)
+		* [12.4. Initialization of Classes and Interfaces](https://docs.oracle.com/javase/specs/jls/se8/html/jls-12.html#jls-12.4)
+		* [Varargs](https://docs.oracle.com/javase/1.5.0/docs/guide/language/varargs.html)
 2. Why the test failed at first?
 	* The correct value wasn't there
 3. Why you corrected the test that way?
+	* should_initialized_to_default_value
+		* I just wrote the default value of the uninitialized fields
+	* should_get_initialization_ordering
+		* I listed the answers depending on the order they are called
 4. Do you have further questions on this knowledge point?
 	* None
 
